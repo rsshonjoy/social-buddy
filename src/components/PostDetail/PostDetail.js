@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import Comment from '../Comment/Comment';
 
 const PostDetail = () => {
   const {id} = useParams()
@@ -26,6 +27,9 @@ const PostDetail = () => {
       <p>Title: {post.title}</p>
       <p>Poste body: {post.body}</p>
       <p>Number of comments: {comments.length}</p>
+      {
+        comments.map(comment => <Comment comment ={comment}></Comment>)
+      }
     </div>
   );
 };
