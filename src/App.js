@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
+import About from "./components/About/About";
 import Home from "./components/Home/Home";
 
 function App() {
@@ -38,10 +39,10 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          {/* <Route path="/about">
+          <Route path="/about">
             <About />
           </Route>
-          <Route path="/dashboard">
+          {/* <Route path="/dashboard">
             <Dashboard />
           </Route> */}
         </Switch>
